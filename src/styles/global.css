@@ -61,12 +61,12 @@ article {
 
 /* Default (light mode) */
 .banner {
-  content: url('/hs-banner.png');
+  content: url('/hs-banner-light.png');
 }
 
 /* Dark mode */
 .dark .banner {
-  content: url('/hs-banner-light.png');
+  content: url('/hs-banner-dark.png');
 }
 
 

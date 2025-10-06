@@ -39,17 +39,15 @@ const work = await Promise.all(
       <section>
         <article class="space-y-4">
           <p class="animate">
-            Ich bin ein passionierter Cloud Engineer, Security Evangelist und VoIP-Experte mit fundiertem Wissen in modernen IT-Infrastrukturen, Netzwerktechnologien und Kommunikationsnetzen.
-            In meiner Rolle als IT-Berater unterstütze ich Unternehmen bei der sicheren Gestaltung cloudbasierter Systeme, der Förderung von Sicherheitsbewusstsein und der Optimierung von VoIP-Lösungen für effiziente Kommunikation.
+           Als Cloud Engineer, Security Evangelist und VoIP-Experte mit tiefem Know-how in modernen IT-Infrastrukturen, Netzwerktechnologien und Unternehmenskommunikation unterstütze ich Unternehmen bei der sicheren Architektur, Implementierung und dem Betrieb cloudbasierter Systeme (Hybrid- und Multi-Cloud). Mit technische Exzellenz und klarer Business-Orientierung erfüllen meine maßgeschneiderten Lösungen sowohl die technische Anforderungen als auch Geschäftsziele.
           </p>
+
           <p class="animate">
-            Durch meine Kombination aus fundiertem technischen Know-how und kundenfokussierter Beratung kann ich bei der <Link href="https://digidim.de" aria-label="Digital Dimension IT GmbH" external>Digital Dimension IT GmbH</Link> individuelle Lösungen schaffen, die technische Anforderungen nahtlos mit den Zielen des Unternehmens verbinden.
+            Bei der <Link href="https://digidim.de" aria-label="Digital Dimension IT GmbH" external>Digital Dimension IT GmbH</Link> verbinde ich diese technische Tiefe mit kundenfokussierter Beratung, um Lösungen zu liefern, die Security-by-Design, Compliance-Anforderungen und Geschäftsziele nahtlos vereinen. Mein Schwerpunkt liegt auf der sicheren Einführung und dem Betrieb von Cloud-Technologien, der Entwicklung und Umsetzung von IT-Sicherheitskonzepten On-Premises und in der Cloud sowie der Anaylse und Optimierung von komplexen VoIP-/Kommunikationsumgebungen.
           </p>
+
           <p class="animate">
-            Mein Schwerpunkt liegt auf der sicheren Implementierung von Cloud-Technologien im Bereich von Hybrid- und Multi-Cloud-Strukturen. Dazu gehört neben der strategischen Beratung zu IT-Sicherheitskonzepten On-Premises und in der Cloud auch die Optimierung von Kommunikationssystemen.
-          </p>
-          <p class="animate">
-            Als Securityexperte liegt mir besonders die Sensibilisierung für IT-Sicherheitsrisiken am Herzen, wobei ich mich auf E-Mail-Sicherheit, Cloud-Security in Microsoft 365-Umgebungen und Zero-Trust-Modellen spezialisiert habe. Meine Kombination aus technischer Tiefe und kundenorientierter Beratung ermöglicht es mir, maßgeschneiderte Lösungen zu entwickeln, die sowohl technische Anforderungen als auch Geschäftsziele erfüllen.
+            Als Security Evangelist treibe ich Awareness und Resilienz im Unternehmen voran – mit besonderem Fokus auf E-Mail-Sicherheit, Cloud-Security in Microsoft 365-Umgebungen und Zero-Trust-Architekturen. So entstehen maßgeschneiderte, skalierbare Lösungen, die messbaren Mehrwert liefern: robust, effizient und zukunftssicher.
           </p>
         </article>
       </section>
@@ -57,10 +55,10 @@ const work = await Promise.all(
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Latest posts
+            Neuste Einträge
           </h5>
           <Link href="/blog">
-            See all posts
+            mehr >
           </Link>
         </div>
         <ul class="flex flex-col gap-4">
@@ -75,39 +73,10 @@ const work = await Promise.all(
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Work Experience
-          </h5>
-          <Link href="/work">
-            See all work
-          </Link>
-        </div>
-        <ul class="flex flex-col space-y-4">
-          {work.map(entry => (
-            <li>
-              <div class="text-sm opacity-75">
-                {dateRange(entry.data.dateStart, entry.data.dateEnd)}
-              </div>
-              <div class="font-semibold text-black dark:text-white">
-                {entry.data.company}
-              </div>
-              <div class="text-sm opacity-75">
-                {entry.data.role}
-              </div>
-              <article>
-                <entry.Content />
-              </article>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Recent projects
+            Projekte
           </h5>
           <Link href="/projects">
-            See all projects
+            mehr >
           </Link>
         </div>
         <ul class="flex flex-col gap-4">
@@ -121,7 +90,7 @@ const work = await Promise.all(
 
       <section class="animate space-y-4">
         <h5 class="font-semibold text-black dark:text-white">
-          Let's Connect
+          Kontakt
         </h5>
         <article>
           <p>
@@ -138,9 +107,9 @@ const work = await Promise.all(
             </li>
           ))}
           <li class="line-clamp-1">
-            <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
+            
               {SITE.EMAIL}
-            </Link>
+
           </li>
         </ul>
       </section>

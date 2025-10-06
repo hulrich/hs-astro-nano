@@ -59,6 +59,17 @@ article {
   margin-bottom: 5%;
 }
 
+/* Default (light mode) */
+.banner {
+  content: url('/hs-banner.png');
+}
+
+/* Dark mode */
+.dark .banner {
+  content: url('/hs-banner-light.png');
+}
+
+
 .animate {
   @apply opacity-0 translate-y-3;
   @apply transition-all duration-700 ease-out;
